@@ -1,6 +1,6 @@
 ### Full-stack web developer.
 
-#### 20+ years in startup and corporate environments (WebMD, Kobo)
+#### 20+ years in startup and corporate environments (WebMD, Rakuten)
 
 I specialize in building web front-end applications (Next.js/React.js/Node.js/Express) with production experience in MongoDB, Redis, Docker, AWS and more out of **Vancouver, Canada**.
 
