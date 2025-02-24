@@ -1,3 +1,4 @@
+import * as Fathom from "fathom-client";
 import PageColumn from "@/components/Page/PageColumn";
 import PageMain from "@/components/Page/PageMain";
 import Head from "next/head";
@@ -12,6 +13,12 @@ const Home = () => {
   useEffect(() => {
     // announce release version for easy debugging
     console.log(`👋 v${packageJson.version}`);
+
+    // track pageviews in Fathom Analytics
+    Fathom.load("CUYXHRDH", {
+      url: "https://cdn.usefathom.com/script.js",
+      includedDomains: ["dev.analog.cafe", "localhost:3001"],
+    });
   }, []);
   return (
     <>
