@@ -18,7 +18,7 @@ const PageColumn = styled.div`
   }
 `;
 
-export const MarkdownFigure = styled.div`
+export const MarkdownFigure = styled.span`
   img {
     max-width: 100%;
   }
