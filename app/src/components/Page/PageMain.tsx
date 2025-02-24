@@ -12,6 +12,10 @@ const MainStyles = styled.div`
   line-height: 1.55em;
   font-family: "Maple Mono", monospace;
 
+  @media(max-width: 500px){
+    font-size: .8em;
+  }
+
   h1,
   h2,
   h3,
@@ -32,16 +36,22 @@ const MainStyles = styled.div`
   h3,
   h4 {
     font-size: 1.5em;
+        padding-top: 1.5em;
+
   }
   h3 {
     font-family: "Zilla Slab Highlight", serif;
   }
+
 
   a {
     color: #ed236e;
   }
   p {
     margin-bottom: 1.5em;
+    strong {
+      font-family: "Zilla Slab Highlight", serif;
+    }
   }
 `;
 

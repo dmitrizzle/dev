@@ -10,6 +10,10 @@ const PageColumn = styled.div`
   }
   img {
     border-radius: 1.5em;
+    @media (max-width: 420px){
+      width: 100px;
+      height: 100px;
+    }
   }
 `;
 
