@@ -1,23 +1,10 @@
 import PageColumn, { PageColumnHeader } from "@/components/Page/PageColumn";
 import PageMain from "@/components/Page/PageMain";
-import Card from "@/components/Blocks/Card";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Markdown from "react-markdown";
 import DOC_INTRO from "@/docs/INTRO.md";
 import DOC_EXPERIENCE from "@/docs/EXPERIENCE.md";
-
-const MARKDOWN_COMPONENTS = {
-  a(props: any) {
-    const { href, children, ...rest } = props;
-    return (
-      <Link href={href} target="_blank">
-        {children}
-      </Link>
-    );
-  },
-};
+import HeroCard from "@/components/Blocks/HeroCard";
+import MarkdownDigester from "@/components/Page/MarkdownDigester";
 
 const Home = () => {
   return (
@@ -33,29 +20,18 @@ const Home = () => {
       </Head>
       <PageMain>
         <PageColumn>
-          <PageColumnHeader>
-            <Image
-              src="/dmitri.jpg"
-              alt="Dmitri"
-              width={200}
-              height={200}
-              priority
-            />
-            <Card>
-              <span>my name is</span>
-              <h1>Dmitri Tcherbadji</h1>
-              <h2>
-                you can reach me at{" "}
-                <Link href={"mailto:d@analog.cafe"}>d@analog.cafe</Link>
-              </h2>
-            </Card>
-          </PageColumnHeader>
+          {/* hard-coded in React */}
+          <HeroCard />
+
+          {/* static content in Markdown */}
           <section style={{ paddingTop: 0 }}>
-            <Markdown components={MARKDOWN_COMPONENTS}>{DOC_INTRO}</Markdown>
+            <MarkdownDigester md={DOC_INTRO} />
           </section>
           <section>
-            <Markdown>{DOC_EXPERIENCE}</Markdown>
+            <MarkdownDigester md={DOC_EXPERIENCE} />
           </section>
+
+          {/* . */}
         </PageColumn>
       </PageMain>
     </>

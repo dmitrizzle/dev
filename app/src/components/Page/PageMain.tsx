@@ -12,8 +12,8 @@ const MainStyles = styled.div`
   line-height: 1.55em;
   font-family: "Maple Mono", monospace;
 
-  @media(max-width: 500px){
-    font-size: .8em;
+  @media (max-width: 500px) {
+    font-size: 0.8em;
   }
 
   h1,
@@ -36,16 +36,17 @@ const MainStyles = styled.div`
   h3,
   h4 {
     font-size: 1.5em;
-        padding-top: 1.5em;
-
+    padding-top: 1.5em;
   }
   h3 {
     font-family: "Zilla Slab Highlight", serif;
   }
 
-
   a {
     color: #ed236e;
+    &.anchor {
+      text-decoration-style: dashed;
+    }
   }
   p {
     margin-bottom: 1.5em;
@@ -58,7 +59,9 @@ const MainStyles = styled.div`
 const PageMain = ({ children }: React.PropsWithChildren<{}>) => {
   return (
     <MainStyles>
+      {/* resetting CSS is necessary to ensure that the style defaults are the same across all browsers */}
       <Reset />
+
       <PageNav />
       {children}
     </MainStyles>

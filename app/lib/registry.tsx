@@ -1,5 +1,7 @@
 "use client";
 
+// this component is copy-pasta from Next.js to implement Styled Components
+
 import React, { useState } from "react";
 import { useServerInsertedHTML } from "next/navigation";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";

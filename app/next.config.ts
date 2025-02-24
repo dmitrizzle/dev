@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
   compiler: {
-    styledComponents: true,
+    styledComponents: true, // copy-pasta from Next.js to implement Styled Components
   },
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  webpack: (config) => {
+    // this ensures that we can import markdown files
     config.module.rules.push({
       test: /\.md$/,
       type: "asset/source",
