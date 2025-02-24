@@ -5,8 +5,14 @@ import DOC_INTRO from "@/docs/INTRO.md";
 import DOC_EXPERIENCE from "@/docs/EXPERIENCE.md";
 import HeroCard from "@/components/Blocks/HeroCard";
 import MarkdownDigester from "@/components/Page/MarkdownDigester";
+import packageJson from "../../package.json";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    // announce release version for easy debugging
+    console.log(`👋 v${packageJson.version}`);
+  }, []);
   return (
     <>
       <Head>
