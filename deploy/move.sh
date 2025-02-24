@@ -23,3 +23,7 @@ done
 
 # rename ./out folder to ./docs so that it can be used by GitHub
 mv ./out ./docs
+
+# make a commit with a version number
+VERSION=$(jq -r .version ./package.json)
+git commit -am "Build v$VERSION"

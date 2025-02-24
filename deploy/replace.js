@@ -40,14 +40,3 @@ import { replaceInFileSync } from "replace-in-file";
 
   console.log("Rewrote filenames to rid of underscores in _next, _app, _error.");
 })();
-
-
-// to automate:
-// move out folder to ../docs
-
-// rename "_next" folder to "next"
-
-// rename "_app" file to "app"
-// rename "_error" file to "err"
-// rename "_buildManifest" to "buildManifest"
-// rename "_ssgManifest" to "ssgManifest"
