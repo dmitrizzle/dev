@@ -1,5 +1,8 @@
 import { replaceInFileSync } from "replace-in-file";
 
+// this file runs in node to find and replace all instances of file names and folder names that start with an underscore
+// GitHub Pages can not publish or use files that start with an underscore
+
 (() => {
   const stage1 = {
     files: "out/**/**.*",
@@ -38,7 +41,6 @@ import { replaceInFileSync } from "replace-in-file";
   console.log("Rewrote filenames to rid of underscores in _next, _app, _error.");
 })();
 
-// && rm -rf ../docs && mv ./website ../docs
 
 // to automate:
 // move out folder to ../docs
