@@ -37,6 +37,8 @@ import { replaceInFileSync } from "replace-in-file";
   replaceInFileSync(stage1);
   replaceInFileSync(stage2);
   replaceInFileSync(stage3);
+  replaceInFileSync(stage4);
+  replaceInFileSync(stage5);
 
   console.log("Rewrote filenames to rid of underscores in _next, _app, _error.");
 })();
