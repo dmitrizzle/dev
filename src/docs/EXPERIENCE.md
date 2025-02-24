@@ -104,6 +104,12 @@ Chiang Mai’s [largest private school](https://en.wikipedia.org/wiki/Prince_Roy
 
 I helped run and design psychology experiments on campus while studying for my degree.
 
+#### **Bryant Renovations** 2005-2008
+
+**Carpenter Assistnat.** Toronto.
+
+This was my part-time job while studying where I helped with demoliton, drywall installation, roofing, etc.
+
 ![After the graduating ceremony at the University of Toronto.](/uoft.jpg "After the graduating ceremony at the University of Toronto.")
 
 ### Education.
