@@ -24,6 +24,9 @@ done
 # rename ./out folder to ./docs so that it can be used by GitHub
 mv ./out ./docs
 
+# add CNAME so that pages can be properly deployed
+echo "dev.analog.cafe" >> ./docs/CNAME
+
 # make a commit with a version number
 git add ./docs
 git commit -m "Build v$(grep '"version"' ./package.json | head -1 | sed -E 's/.*"version": "(.*)".*/\1/')"
