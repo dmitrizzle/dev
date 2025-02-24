@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:gh": "yarn version && rm -rf ./docs && next build && node ./deploy/replace.js && bash ./deploy/move.sh",
+    "deploy": "yarn version && rm -rf ./docs && next build && node ./deploy/replace.js && bash ./deploy/move.sh",
     "start": "next start",
     "lint": "next lint"
   },
