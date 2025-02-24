@@ -30,7 +30,7 @@ import { replaceInFileSync } from "replace-in-file";
 
   const stage5 = {
     files: "out/**/**.*",
-    from: /ssgManifest/g,
+    from: /_ssgManifest/g,
     to: "ssgManifest",
   };
 
