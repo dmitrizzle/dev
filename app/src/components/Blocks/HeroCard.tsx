@@ -3,9 +3,11 @@ import { PageColumnHeader } from "../Page/PageColumn";
 import Card from "./Card";
 import Link from "next/link";
 
+import dmitri from "@/images/dmitri.jpg"
+
 const HeroCard = () => (
   <PageColumnHeader>
-    <Image src="/dmitri.jpg" alt="Dmitri" width={200} height={200} priority />
+    <Image src={dmitri} alt="Dmitri" width={200} height={200} priority />
     <Card>
       <span>my name is</span>
       <h1>Dmitri Tcherbadji</h1>

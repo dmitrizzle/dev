@@ -10,10 +10,25 @@ const PageColumn = styled.div`
   }
   img {
     border-radius: 1.5em;
-    @media (max-width: 420px){
+    height: auto;
+    @media (max-width: 420px) {
       width: 100px;
       height: 100px;
     }
+  }
+`;
+
+export const MarkdownFigure = styled.div`
+  img {
+    max-width: 100%;
+  }
+  margin-top: 6em;
+  
+  text-align: center;
+  > small {
+    opacity: .5;
+    font-size: .8em;
+    display: block;
   }
 `;
 

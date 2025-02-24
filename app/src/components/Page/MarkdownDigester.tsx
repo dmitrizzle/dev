@@ -1,6 +1,8 @@
 import { generateTagIdFromText } from "@/utils/string";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Image from "next/image";
+import { MarkdownFigure } from "./PageColumn";
 
 const MARKDOWN_COMPONENTS = {
   a(props: any) {
@@ -23,7 +25,7 @@ const MARKDOWN_COMPONENTS = {
           if (target)
             target.scrollIntoView({
               behavior: "smooth",
-              block: "start" // ensures that the heading we're scrolling to ends up at the top of the page, if possible
+              block: "start", // ensures that the heading we're scrolling to ends up at the top of the page, if possible
             });
         }}
       >
@@ -37,6 +39,20 @@ const MARKDOWN_COMPONENTS = {
     const id = generateTagIdFromText(children);
 
     return <h3 id={id}>{children}</h3>;
+  },
+  img(props: any) {
+    const { alt, src, title } = props;
+
+    // statically import image files so that Next.js can resize them for us
+    const staticSrc = require(`../../images${src}`);
+
+    return (
+      <MarkdownFigure>
+        {/* can not use figure or figcaption here because the Markdown tool inserts images into paragraphs */}
+        <Image src={staticSrc} alt={alt} title={title} />
+        <small>{title}</small>
+      </MarkdownFigure>
+    );
   },
 };
 

@@ -20,18 +20,19 @@ const Home = () => {
       </Head>
       <PageMain>
         <PageColumn>
-          {/* hard-coded in React */}
+          {/* hero card as a header */}
           <HeroCard />
 
           {/* static content in Markdown */}
           <section style={{ paddingTop: 0 }}>
             <MarkdownDigester md={DOC_INTRO} />
           </section>
-          <section>
+          <section style={{ paddingBottom: "6em" }}>
             <MarkdownDigester md={DOC_EXPERIENCE} />
           </section>
 
-          {/* . */}
+          {/* hero card as a footer */}
+          <HeroCard />
         </PageColumn>
       </PageMain>
     </>
