@@ -25,4 +25,5 @@ done
 mv ./out ./docs
 
 # make a commit with a version number
-git commit -am "Release v$(grep '"version"' ./package.json | head -1 | sed -E 's/.*"version": "(.*)".*/\1/')"
+git add ./docs
+git commit -m "Build v$(grep '"version"' ./package.json | head -1 | sed -E 's/.*"version": "(.*)".*/\1/')"
