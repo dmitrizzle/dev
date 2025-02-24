@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MarkdownFigure } from "./PageColumn";
 
 const MARKDOWN_COMPONENTS = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   a(props: any) {
     // send all links from markdown files into a new tab
     const { href, children } = props;
@@ -33,6 +34,7 @@ const MARKDOWN_COMPONENTS = {
       </Link>
     );
   },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   h3(props: any) {
     // generate ids for header tags for easy anchring
     const { children } = props;
@@ -40,10 +42,12 @@ const MARKDOWN_COMPONENTS = {
 
     return <h3 id={id}>{children}</h3>;
   },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   img(props: any) {
     const { alt, src, title } = props;
 
     // statically import image files so that Next.js can resize them for us
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const staticSrc = require(`../../images${src}`);
 
     return (

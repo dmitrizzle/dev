@@ -1,4 +1,4 @@
-import PageColumn, { PageColumnHeader } from "@/components/Page/PageColumn";
+import PageColumn from "@/components/Page/PageColumn";
 import PageMain from "@/components/Page/PageMain";
 import Head from "next/head";
 import DOC_INTRO from "@/docs/INTRO.md";

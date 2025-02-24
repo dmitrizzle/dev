@@ -56,7 +56,7 @@ const MainStyles = styled.div`
   }
 `;
 
-const PageMain = ({ children }: React.PropsWithChildren<{}>) => {
+const PageMain = ({ children }: React.PropsWithChildren) => {
   return (
     <MainStyles>
       {/* resetting CSS is necessary to ensure that the style defaults are the same across all browsers */}
