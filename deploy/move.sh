@@ -27,3 +27,5 @@ mv ./out ./docs
 # make a commit with a version number
 git add ./docs
 git commit -m "Build v$(grep '"version"' ./package.json | head -1 | sed -E 's/.*"version": "(.*)".*/\1/')"
+
+echo "New build ready to be pushed to GH Pages."
