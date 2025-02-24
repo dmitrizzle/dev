@@ -1,3 +1,3 @@
 # dev
 
-This is a simple portfolio/resume page built in Next.js with Styled Components and `react-markdown`.
+This is a simple portfolio/resume page built (within a span of an evening) in Next.js with Styled Components and `react-markdown`.
