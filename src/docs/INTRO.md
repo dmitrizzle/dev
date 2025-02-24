@@ -6,6 +6,6 @@ I specialize in building web front-end applications (Next.js/React.js/Node.js/Ex
 
 TL;DR: I build custom websites that scale using modern technology from start to finish or as a part of a team.
 
-Meta: [See the code I used to build this page on GitHub](https://github.com/dmitrizzle/dev).
+Meta: [See the code I used to build & deploy this page on GitHub](https://github.com/dmitrizzle/dev).
 
 Read this CV as a PDF: [Download](/CV_DMITRI_TCHERBADJI_2025.pdf).

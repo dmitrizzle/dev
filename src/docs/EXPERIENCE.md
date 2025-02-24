@@ -35,7 +35,7 @@ By the end of my first year, [QxMD was sold to WebMD](https://www.prnewswire.com
 
 Henning Solutions was a software engineering firm that built e-commerce websites and a video streaming service for children. I built various web components in PHP (and limited ASP.NET) with front-ends made with MooTools and SASS.
 
-I also created and produced [animated shorts](https://vimeo.com/31818723) in AfterEffects and Pro Tools (for audio production).
+I also created and produced [animated shorts](https://vimeo.com/31818723) in AfterEffects and Pro Tools.
 
 ![Matter tech accelerator group shot.](/matter.jpg "Matter tech accelerator group shot with Eureka King.")
 
