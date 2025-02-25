@@ -25,6 +25,7 @@ export const MarkdownFigure = styled.span`
     height: auto;
   }
   margin-top: 6em;
+  display: block;
   
   text-align: center;
   > small {

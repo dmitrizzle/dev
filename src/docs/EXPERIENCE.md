@@ -1,6 +1,5 @@
 ![My VS Code as I edit this web page.](/code.png "My VS Code as I edit this web page.")
 
-
 ### Work experience.
 
 Please note that I’ve arranged my experience in order of relevance. Below, you’ll find my [entrepreneurial roles](#founding-roles), [open-source contributions](#open-source), and [education summary](#education).
@@ -33,9 +32,7 @@ By the end of my first year, [QxMD was sold to WebMD](https://www.prnewswire.com
 
 **Web Developer and Art Director.** Toronto.
 
-Henning Solutions was a software engineering firm that built e-commerce websites and a video streaming service for children. I built various web components in PHP (and limited ASP.NET) with front-ends made with MooTools and SASS.
-
-I also created and produced [animated shorts](https://vimeo.com/31818723) in AfterEffects and Pro Tools.
+Henning Solutions was a software engineering firm that built e-commerce websites and a video streaming service for children. I engineered various web components in PHP (and limited ASP.NET) with front-ends made with MooTools and SASS. See [Dmitri’s Animation](#founding-roles) for a career link.
 
 ![Matter tech accelerator group shot.](/matter.jpg "Matter tech accelerator group shot with Eureka King.")
 
@@ -66,6 +63,12 @@ My less technical responsibilities included hiring and managing a team of three 
 **Technical Co-Founder.** Toronto.
 
 HBE was a Canadian startup that designed iPhone applications. As a co-founder, I designed various components of an iPhone application and helped get the seed round funding.
+
+#### **Dmitri’s Animation.** 2009-2012
+
+**Sole Proprietor.** Toronto.
+
+Dmitri’s Animation was a contracting business I started that produced video content and provided web services. I was paid through this busienss name by [Henning Solutions](#work-experience) and other clients, like [Sheridan College](#education) who hired me to produce short animation videos for their stage producdtion. [See the archived website](https://web.archive.org/web/20110207124816/http://dmitrisanimation.com/-tv).
 
 ![`chat-bubble` UI](/chat-bubble.gif "`chat-bubble` UI")
 
