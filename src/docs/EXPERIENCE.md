@@ -46,9 +46,11 @@ I worked in a variety of capacities as a founder of three Canadian and one US-ba
 
 [Analog.Cafe](https://www.analog.cafe) is a Canadian web publishing/content platform with a custom CMS built mainly in Node/Next.js and a visual editor made with Slate.js. It uses MongoDB/Redis for content storage and user accounts/actions and integrates with Sendgrid and Cloudinary. It uses Passport.js for SSO and one-time-code authentication.
 
-Analog.Cafe is a blog with public contributions (100+ authors). It has a growing readership of 100K UMV, 13K email subscribers, and 100 monthly paid subscribers via Stripe.
+Analog.Cafe is a blog with public contributions (100+ authors). It has a growing readership of 100K UMV, 14K email subscribers, and hundreds of paying customers via Stripe.
 
-I built many types of [tools and apps](https://www.analog.cafe/apps-downloads) for Analog.Cafe. I am currently working on an app that sources large image files from connected Dropbox accounts in real time and processes them in queued Kubernetes pods on DigitalOcean.
+I built many types of [tools and apps](https://www.analog.cafe/apps-downloads) to extend the website’s functionality. The most capable is a K8S deployment with autoscaling via Keda and an in-house queue management with MongoDB written in Typescript. This deployment uses `libvips`, `sharp`, `libraw`, and Dropbox API via Node.js (written with TypeScript) to [batch-invert film negatives](https://www.analog.cafe/app/film-q) (typically large image files, up to 300 MiB) in the cloud.
+
+![filmQ film negative inversion app](/filmq.jpg "filmQ film negative inversion app.")
 
 #### **Eureka King** 2015-2018
 
